@@ -1,0 +1,73 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+.square {
+    margin-top: 15px;
+    height: 150px;
+    width: 150px;
+    border: 2px solid black;
+    font-size: 200%;
+    line-height: 150px;
+    text-align: center;
+    user-select: none;
+}
+
+.blue {
+    background-color: rgb(48, 48, 189);
+}
+.green {
+    background-color: rgba(20, 201, 20, 0.692);
+}
+.yellow {
+    background-color: rgba(235, 235, 27, 0.973);
+}
+
+table {
+    margin: 0 auto;
+
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+tr,
+td {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    user-select: none;
+    border: 2px solid black;
+}
+.task {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.firstTitle {
+    margin: 0;
+}
+.task3 .square {
+    margin: 0 auto;
+}
+
+.tableResult {
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+    color: rgb(59, 59, 59);
+    border: 2px solid gray;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: lightgrey;
+}
+
+.toggled {
+    background-color: darksalmon;
+    transform: rotate(360deg);
+    transition: transform 0.8s;
+}
