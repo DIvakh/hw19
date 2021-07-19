@@ -68,6 +68,55 @@ td {
 
 .toggled {
     background-color: darksalmon;
-    transform: rotate(360deg);
-    transition: transform 0.8s;
+    transform: rotate(90deg);
+    transition: transform 0.2s linear;
+}
+
+form {
+    margin-top: 15px;
+    font-size: 1.5rem;
+}
+.toggler {
+    display: none;
+}
+.togglerLabel {
+    display: block;
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: inset 2px 1px 1px rgb(199, 3, 3);
+    position: absolute;
+    cursor: pointer;
+    transition: all 0.1s;
+    z-index: 10;
+}
+
+.toggler:checked + .togglerLabel {
+    transition: all 0.1s;
+    box-shadow: inset -2px -1px 1px rgb(1, 88, 1);
+    background-color: green;
+    right: 0px;
+}
+.togglerContainer {
+    margin: 0 auto;
+    border-radius: 40%;
+    cursor: pointer;
+    display: block;
+    position: relative;
+    height: 20px;
+    width: 35px;
+    background-color: rgb(255, 204, 137);
+}
+.toggler:checked ~ .colorToggle {
+    background-color: rgb(226, 226, 106);
+}
+.colorToggle {
+    border-radius: 40%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 }

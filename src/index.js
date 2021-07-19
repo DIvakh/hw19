@@ -49,6 +49,7 @@ $container.addEventListener('click', e => {
 
 // ========== TASK 2: ==========
 //==============================
+
 const randomRange = 100;
 const fromOne = 1;
 const tableSize = 4;
@@ -102,4 +103,8 @@ function classToggle(element, toggledClass) {
 
 // ===== As example: =====
 
-classToggle('.example', 'toggled');
+const $button = document.querySelector('.toggler');
+
+$button.addEventListener('click', () => {
+    classToggle('.example', 'toggled');
+});
